@@ -65,14 +65,15 @@
     </div>
 
     <!-- Sub Header section -->
-     <div class="sub-header" style="margin-top: 20vh;">
+     <div class="sub-header" style="margin-top: 25vh;">
         <h1 class="slogan">
-            <span style="font-size: 75px;">
+            <span>
                 <span class="changable-text">Discover</span> and 
                 <span class="changable-text">Buy</span > 
             </span>
                 <br> 
-            <span class="colorful-text">AI</span>  Models Easily.</h1>
+            <span class="colorful-text">AI</span>  Models Easily.
+        </h1>
 
         <h2 style="color: #55595b; word-spacing: 5px; font-weight: 400; margin-bottom: 33px;"
         id="sub-header-text">
@@ -82,23 +83,51 @@
         <button id="start-btn">Let's start</button>
      </div>
      <model-viewer
+        id="model-viewer"
         src="./images/robot.glb"
         alt="A 3D model"
         disable-zoom
         disable-tap
-        style="
-        position: absolute;
-        top: 70px;
-        left: 50px;
-        width: 250px;
-        height: 250px;
-        z-index: 1;
-        "
         shadow-intensity="0.5"
         shadow-softness="1"
         environment-image="neutral"
         camera-orbit="-30deg 80deg 105%"
+        camera-controls
         ></model-viewer>
+
+     <!-- types of models -->
+     <div class="types-of-models-container">
+        <div class="types-of-models">
+            <h1 style="font-weight: 500;">Types Of Models</h1>
+            <div class="types-of-models-cards-container">
+                <div class="card">
+                    <h3>Computer Vision</h3>
+                    <p>Description: <br> Object Detection,Image Classification,Face Recognition, Image Segmentation </p>
+                    <p>AVG Price: <br><span style="font-weight: bold;">30$</span>  </p>
+                    <button>View</button>
+                </div>
+                <div class="card">
+                    <h3>Natural Language Processing</h3>
+                    <p>Description: <br> Object Detection,Image Classification,Face Recognition, Image Segmentation </p>
+                    <p>AVG Price: <br><span style="font-weight: bold;">30$</span>  </p>
+                    <button>View</button>
+                </div>
+                <div class="card">
+                    <h3>Healthcare & Biotech</h3>
+                    <p>Description: <br> Object Detection,Image Classification,Face Recognition, Image Segmentation </p>
+                    <p>AVG Price: <br><span style="font-weight: bold;">30$</span>  </p>
+                    <button>View</button>
+                </div>
+                <div class="card">
+                    <h3>Finance & Forecasting</h3>
+                    <p>Description: <br> Object Detection,Image Classification,Face Recognition, Image Segmentation </p>
+                    <p>AVG Price: <br><span style="font-weight: bold;">30$</span>  </p>
+                    <button>View</button>
+                </div>
+            </div>
+        </div>
+     </div>
+
     <script src="./script.js"></script>
 </body>
 </html>

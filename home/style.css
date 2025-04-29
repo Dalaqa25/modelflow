@@ -34,6 +34,7 @@ i
 /* main header config */
 .header
 {
+    background-color: #ffff;
     display: flex;
     justify-content: center;
     transition: all 0.5s ease;
@@ -212,6 +213,23 @@ nav {
     font-family: "open sans", sans-serif;
 }
 
+#model-viewer
+{
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    width: 250px;
+    height: 250px;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#model-viewer.animate {
+    animation: slideIn 0.5s ease-out forwards;
+}
+
 .sub-header.animate {
     animation: slideIn 1s ease-out forwards;
 }
@@ -287,6 +305,57 @@ nav {
 {
     background-position: 100% 0;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* types of models */
+.types-of-models-container {
+    margin-top: 27vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.types-of-models {
+    width: 95%;
+    font-family: "roboto", sans-serif;
+}
+
+.types-of-models-cards-container {
+    margin-top: 2vh;
+    display: grid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    font-weight: 300;
+    width: 250px;
+    max-height: 270px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    border: 1px solid #eeefee;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card button {
+    background-color: #f6f6f6;
+    border-radius: 12px;
+    border:none;
+    width: 100%;
+    font-size: medium;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #ededed;
+    cursor: pointer;
 }
 
 /* animations */

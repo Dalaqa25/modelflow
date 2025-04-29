@@ -1,7 +1,9 @@
 // This script will add an animation class to the sub-header element when the page loads
 document.addEventListener("DOMContentLoaded", () => {
     const subHeader = document.querySelector(".sub-header");
+    const modelViewer = document.getElementById("model-viewer")
     subHeader.classList.add("animate");
+    modelViewer.classList.add("animate");
 });
 
 // this script will chnage the words

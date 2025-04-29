@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- 3d -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
     <!-- css link -->
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./dialgStyle.css">
@@ -78,6 +81,24 @@
 
         <button id="start-btn">Let's start</button>
      </div>
+     <model-viewer
+        src="./images/robot.glb"
+        alt="A 3D model"
+        disable-zoom
+        disable-tap
+        style="
+        position: absolute;
+        top: 70px;
+        left: 50px;
+        width: 250px;
+        height: 250px;
+        z-index: 1;
+        "
+        shadow-intensity="0.5"
+        shadow-softness="1"
+        environment-image="neutral"
+        camera-orbit="-30deg 80deg 105%"
+        ></model-viewer>
     <script src="./script.js"></script>
 </body>
 </html>

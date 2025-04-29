@@ -36,10 +36,10 @@ i
 {
     display: flex;
     justify-content: center;
-    box-shadow: 0px 4px 8px rgba(157, 157, 157, 0.1);
     transition: all 0.5s ease;
     position: fixed;
     z-index: 1000000;
+    box-shadow: 0px 4px 8px rgba(195, 184, 184, 0.1);
     top: 0;
     width: 100%;
 }
@@ -48,7 +48,7 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 5px;
-    width: 90%;
+    width: 95%;
 }
 
 /* first secion of header */
@@ -287,32 +287,6 @@ nav {
 {
     background-position: 100% 0;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* cursor animation */
-.circle {
-    height: 18px;
-    width: 18px;
-    border-radius: 24px;
-    background-color: black;
-    position: fixed;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    z-index: 99999999; /* So that it stays on top of all other elements */
-    opacity: 0; /* Initially hidden */
-    transform: scale(0.5); /* Initially scaled down */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
-}
-
-.circle.show {
-    opacity: 1;
-    transform: scale(1); /* Scale up when showing */
-}
-
-.circle.hide {
-    opacity: 0;
-    transform: scale(0.5); /* Scale down when hiding */
 }
 
 /* animations */
